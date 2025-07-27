@@ -1,11 +1,7 @@
 name: create S3 Bucket and Host static site
 
 on:
-  push:
-    path:
-      - main.tf
-    branches:
-      - s3
+  workflow-dispatch:
 
 jobs:
   create-s3-bucket:
